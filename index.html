@@ -4,35 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employment Application Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="margin:0; background-color:#fcc437; font-family:Arial, Helvetica, sans-serif;">
 
-  <div style="background-color:white; width:95%; max-width:700px; margin:20px auto; padding-bottom:20px;">
+<body>
+
+  <div class="card">
     
-    <img src="img.jpeg" alt="Error" style="width:100%; display:block;">
+    <img src="img.jpeg" alt="Error" class="hero-img">
 
-    <div style="text-align:center; padding:20px;">
-      <h2 style="margin-bottom:8px;">Employment Application</h2>
-      <p style="color:gray; margin-top:0;">
+    <div class="header">
+      <h2>Employment Application</h2>
+      <p>
         Fill the form below accurately indicating your potentials and suitability to job applying for.
       </p>
     </div>
 
     <hr>
 
-    <form action="submit" style="padding:20px;">
+    <form class="form">
 
-      <label>Name <span style="color:red;">*</span></label><br><br>
+      <label>Name <span>*</span></label>
 
-      <input type="text" name="firstname" required style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">First Name</small><br><br>
+      <input type="text" required>
+      <small>First Name</small>
 
-      <input type="text" name="lastname" required style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">Last Name</small><br><br><br>
+      <input type="text" required>
+      <small>Last Name</small>
 
-      <label>Birth Date</label><br><br>
+      <br><br>
 
-      <select style="width:100%; height:35px; box-sizing:border-box;">
+      <label>Birth Date</label>
+
+      <select>
         <option disabled selected>Please select a day</option>
         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
         <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
@@ -40,104 +44,92 @@
         <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
         <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
         <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
-        <option>31</option>
-      </select><br>
-      <small style="color:gray;">Day</small><br><br>
+        <option>31</option></select>
+      <small>Day</small>
 
-      <select style="width:100%; height:35px; box-sizing:border-box;">
+      <select>
         <option disabled selected>Please select a month</option>
         <option>January</option><option>February</option><option>March</option><option>April</option>
         <option>May</option><option>June</option><option>July</option><option>August</option>
         <option>September</option><option>October</option><option>November</option><option>December</option>
-      </select><br>
-      <small style="color:gray;">Month</small><br><br>
+      
+      </select>
+      <small>Month</small>
 
-      <select style="width:100%; height:35px; box-sizing:border-box;">
+      <select>
         <option disabled selected>Please select a year</option>
-        <option>2026</option><option>2025</option><option>2024</option><option>2023</option>
+      <option>2026</option><option>2025</option><option>2024</option><option>2023</option>
         <option>2022</option><option>2021</option><option>2020</option><option>2019</option>
         <option>2018</option><option>2017</option><option>2016</option><option>2015</option>
         <option>2014</option><option>2013</option><option>2012</option><option>2011</option>
         <option>2010</option><option>2000</option><option>1990</option><option>1980</option>
         <option>1970</option><option>1960</option><option>1950</option><option>1940</option>
         <option>1930</option><option>1920</option>
-      </select><br>
-      <small style="color:gray;">Year</small><br><br><br>
+      
+    </select>
+      <small>Year</small>
 
-      <label>Phone Number <span style="color:red;">*</span></label><br><br>
-      <input type="tel" name="phone" required placeholder="+91 9876543210" pattern="\+91[ ]?[6-9]\d{9}" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
+      <br><br>
 
-      <label>Email</label><br><br>
-      <input type="email" name="email" placeholder="example@email.com" style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">example@example.com</small><br><br><br>
+      <label>Phone Number <span>*</span></label>
+      <input type="tel" placeholder="+91 9876543210" required>
 
-      <label>Address <span style="color:red;">*</span></label><br><br>
-      <input type="text" name="address" required style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">Street Address</small><br><br>
+      <label>Email</label>
+      <input type="email" placeholder="example@email.com">
+      <small>example@example.com</small>
 
-      <input type="text" name="address2" style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">Street Address Line 2</small><br><br>
+      <label>Address <span>*</span></label>
 
-      <input type="text" name="city" required style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">City</small><br><br>
+      <input type="text" required>
+      <small>Street Address</small>
 
-      <input type="text" name="state" required style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">State / Province</small><br><br>
+      <input type="text">
+      <small>Street Address Line 2</small>
 
-      <input type="text" name="zip" required style="width:100%; height:35px; box-sizing:border-box;"><br>
-      <small style="color:gray;">Postal / Zip Code</small><br><br><br>
+      <input type="text" required>
+      <small>City</small>
 
-      <h4 style="margin:0 0 15px 0;">How were you referred to us? <span style="color:red;">*</span></h4>
+      <input type="text" required>
+      <small>State / Province</small>
 
-      <label><input type="checkbox" name="ref"> Walk-In</label><br><br>
-      <label><input type="checkbox" name="ref"> Referral</label><br><br>
-      <label><input type="checkbox" name="ref"> Newspaper Ad</label><br><br>
-      <label><input type="checkbox" name="ref"> Facebook</label><br><br>
-      <label><input type="checkbox" name="ref"> Twitter</label><br><br>
-      <label><input type="checkbox" name="ref"> Linkedin</label><br><br>
-      <label><input type="checkbox" name="ref"> Other (Please Specify)</label><br><br><br>
+      <input type="text" required>
+      <small>Postal / Zip Code</small>
 
-      <h4 style="margin:0 0 15px 0;">Resume and Files</h4>
+      <h4>How were you referred to us? <span>*</span></h4>
 
-      <label for="fileUpload" style="display:block; border:1px solid #999; text-align:center; padding:30px 10px;">
-        ☁<br>
-        <b>Upload a File</b><br>
-        Drag and drop files here
+      <label><input type="checkbox"> Walk-In</label>
+      <label><input type="checkbox"> Referral</label>
+      <label><input type="checkbox"> Newspaper Ad</label>
+      <label><input type="checkbox"> Facebook</label>
+      <label><input type="checkbox"> Twitter</label>
+      <label><input type="checkbox"> Linkedin</label>
+      <label><input type="checkbox"> Other</label>
+
+      <h4>Resume and Files</h4>
+
+      <label class="upload-box" for="file-upload">
+        ☁<br><b>Upload a File</b><br>Drag and drop files here
       </label>
-      <input type="file" id="fileUpload" style="display:none;"><br><br>
+      <input type="file" id="file-upload" class="file">
 
-      <h4 style="margin:0 0 15px 0;">Motivation letter <span style="color:red;">*</span></h4>
-      <textarea name="motivation" required style="width:100%; height:150px; box-sizing:border-box;"></textarea><br><br>
+      <h4>Motivation letter <span>*</span></h4>
+      <textarea></textarea>
 
-      <h4 style="margin:0 0 15px 0;">Training and Certifications <span style="color:red;">*</span></h4>
-      <input type="text" placeholder="Title" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="text" placeholder="Date" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <button type="button" style="height:35px; padding:0 20px;">Save</button><br><br>
+      <h4>Training and Certifications</h4>
+      <input type="text" placeholder="Title">
+      <input type="text" placeholder="Date">
 
-      <h3 style="margin-bottom:8px;">References</h3>
-      <small>Please list two (2) references that are familiar with your work life.</small><br><br><br>
+      <button class="save">Save</button>
 
-      <label>Reference 1</label><br><br>
-      <input type="text" placeholder="Name" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="text" placeholder="Title" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="text" placeholder="Relationship" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="email" placeholder="Email" style="width:100%; height:35px; box-sizing:border-box;"><br><br><br>
+      <hr>
 
-      <label>Reference 2</label><br><br>
-      <input type="text" placeholder="Name" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="text" placeholder="Title" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="text" placeholder="Relationship" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-      <input type="email" placeholder="Email" style="width:100%; height:35px; box-sizing:border-box;"><br><br>
-
-      <hr><br>
-
-      <div style="text-align:center;">
-        <button style="width:100%; max-width:250px; height:45px; background-color:black; color:white;" type="submit">
-          Submit Application
-        </button>
+      <div class="submit-box">
+        <button type="submit" class="submit">Submit Application</button>
       </div>
 
     </form>
+
   </div>
+
 </body>
 </html>
