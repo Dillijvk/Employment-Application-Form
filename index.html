@@ -26,10 +26,10 @@
 
       <label>Name <span>*</span></label>
 
-      <input type="text" required>
+      <input type="text" required id="f-name">
       <small>First Name</small>
 
-      <input type="text" required>
+      <input type="text" required id="l-name">
       <small>Last Name</small>
 
       <br><br>
@@ -72,10 +72,10 @@
       <br><br>
 
       <label>Phone Number <span>*</span></label>
-      <input type="tel" placeholder="+91 9876543210" required>
+      <input type="tel" placeholder="+91 9876543210" required  id="phone">
 
       <label>Email</label>
-      <input type="email" placeholder="example@email.com">
+      <input type="email" placeholder="example@email.com" id="email">
       <small>example@example.com</small>
 
       <label>Address <span>*</span></label>
@@ -97,13 +97,40 @@
 
       <h4>How were you referred to us? <span>*</span></h4>
 
-      <label><input type="checkbox"> Walk-In</label>
-      <label><input type="checkbox"> Referral</label>
-      <label><input type="checkbox"> Newspaper Ad</label>
-      <label><input type="checkbox"> Facebook</label>
-      <label><input type="checkbox"> Twitter</label>
-      <label><input type="checkbox"> Linkedin</label>
-      <label><input type="checkbox"> Other</label>
+      <label>
+<input type="checkbox" id="walkin">
+Walk-In
+</label>
+
+<label>
+<input type="checkbox" id="referral">
+Referral
+</label>
+
+<label>
+<input type="checkbox" id="newspaper">
+Newspaper Ad
+</label>
+
+<label>
+<input type="checkbox" id="facebook">
+Facebook
+</label>
+
+<label>
+<input type="checkbox" id="twitter">
+Twitter
+</label>
+
+<label>
+<input type="checkbox" id="linkedin">
+Linkedin
+</label>
+
+<label>
+<input type="checkbox" id="other">
+Other
+</label>
 
       <h4>Resume and Files</h4>
 
@@ -124,12 +151,14 @@
       <hr>
 
       <div class="submit-box">
-        <button type="submit" class="submit">Submit Application</button>
+        <button type="submit" class="submit" onclick="validation()">Submit Application</button>
       </div>
 
     </form>
 
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
